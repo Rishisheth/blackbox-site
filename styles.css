@@ -79,7 +79,28 @@ p { margin: 0; }
 .focus-time { margin-top: 20px; color: var(--muted-dark); font-size: 13px; }
 .focus-time strong { color: var(--text-dark); font-size: 28px; font-weight: 500; font-variant-numeric: tabular-nums; margin-right: 4px; }
 
+.problem { max-width: 680px; margin: 0 auto; padding: 64px 0; text-align: center; border-top: 1px solid var(--line); }
+.problem p { font-size: 19px; line-height: 1.45; color: var(--muted); }
+.problem .problem-turn { margin-top: 16px; color: var(--muted); }
+.problem strong { color: var(--text); font-weight: 500; }
+
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding: 56px 0 72px; border-top: 1px solid var(--line); }
+.pillar-kicker { font-size: 13px; font-weight: 500; color: var(--focus); }
+.pillar h2 { font-size: 22px; line-height: 1.15; margin-top: 8px; }
+.pillar p:last-child { color: var(--muted); font-size: 15px; margin-top: 10px; }
+
 .how { padding: 72px 0; border-top: 1px solid var(--line); }
+.phases { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: none; }
+.phase-when { font-size: 13px; font-weight: 500; margin-bottom: 12px; display: flex; gap: 8px; align-items: baseline; padding-bottom: 12px; border-bottom: 2px solid var(--text); }
+.phase h3 { font-size: 17px; margin-top: 16px; }
+.phase > p:last-child { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.consistency { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+
+.faq { padding: 72px 0; border-top: 1px solid var(--line); }
+.faq h2 { font-size: 32px; margin-bottom: 24px; }
+.faq dl { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 48px; }
+.faq dt { font-weight: 500; font-size: 16px; }
+.faq dd { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
 .how h2 { font-size: 32px; margin-bottom: 32px; }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
 .step h3 { font-size: 17px; margin-top: 16px; display: flex; align-items: baseline; gap: 8px; }
@@ -123,6 +144,15 @@ p { margin: 0; }
 .train-points { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; }
 .train-points li { font-size: 14px; color: var(--muted); padding-left: 14px; border-left: 2px solid var(--line); }
 .train-points strong { color: var(--text); font-weight: 500; }
+.schedule { margin: 0; border: 1px solid var(--line); border-radius: var(--radius-card); background: var(--surface); padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+.schedule-head { display: flex; justify-content: space-between; align-items: baseline; }
+.schedule-stake { font-size: 13px; font-weight: 500; padding: 2px 8px; border-radius: var(--radius-control); background: var(--primary); color: var(--on-primary); }
+.schedule-goal { font-size: 20px; font-weight: 500; letter-spacing: -0.02em; }
+.schedule-when { font-size: 14px; color: var(--muted); }
+.days { display: flex; gap: 6px; margin: 6px 0 10px; }
+.days span { width: 32px; height: 32px; display: grid; place-items: center; border-radius: var(--radius-control); font-size: 12px; font-weight: 500; border: 1px solid var(--line); color: var(--muted); }
+.days .kept { background: var(--kept); border-color: var(--kept); color: #fff; }
+.days .next { border-color: var(--text); color: var(--text); }
 .stamina { margin: 0; border: 1px solid var(--line); border-radius: var(--radius-card); background: var(--surface); padding: 24px; }
 .stamina-head { display: flex; justify-content: space-between; align-items: baseline; }
 .stamina-head strong { font-size: 28px; font-weight: 500; font-variant-numeric: tabular-nums; margin-right: 4px; }
@@ -159,7 +189,8 @@ p { margin: 0; }
 }
 @media (max-width: 860px) {
   .steps { grid-template-columns: repeat(2, 1fr); }
-  .trust, .why, .train { grid-template-columns: 1fr; }
+  .trust, .why, .train, .pillars, .phases, .faq dl { grid-template-columns: 1fr; }
+  .problem p { font-size: 17px; }
   .train { gap: 32px; }
 }
 @media (max-width: 480px) {

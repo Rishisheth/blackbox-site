@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blackbox — the app for deep work</title>
-  <meta name="description" content="Blackbox blocks everything that isn't your goal, holds you to your word, and trains your focus like a coach. Do deep work every day, and get better at it every week.">
+  <title>Blackbox — do your deep work, every day</title>
+  <meta name="description" content="The deep work app for Mac. Blackbox shuts out distractions while you work, coaches you on what you made, and keeps you showing up every day.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23000%22/%3E%3Crect x=%229%22 y=%229%22 width=%2214%22 height=%2214%22 rx=%222%22 fill=%22%23fff%22/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="config.js"></script>
@@ -19,8 +19,8 @@
   <main id="top">
     <section class="hero">
       <p class="eyebrow">The deep work app for Mac</p>
-      <h1>Deep work, every day.<br><span class="muted">Better at it every week.</span></h1>
-      <p class="lede">Name your goal and how long. Blackbox shuts out everything else, shows you what you shipped, and coaches you to focus longer each week.</p>
+      <h1>Do your deep work.<br><span class="muted">Day after day.</span></h1>
+      <p class="lede">Blackbox shuts out distractions while you work, shows you what you got done, and holds you to coming back tomorrow. Focus, learn and stay consistent, without relying on willpower.</p>
       <div class="actions">
         <a class="button button-solid" href="#waitlist">Get early access</a>
         <a class="button button-outline" href="#how">See how it works</a>
@@ -33,108 +33,123 @@
       </figure>
     </section>
 
+    <section class="problem" aria-label="The problem">
+      <p>You sit down to do the important thing. Two hours later you've cleared email, skimmed Slack and read the news, and the important thing is still waiting.</p>
+      <p class="problem-turn">That isn't a lack of discipline. Your desk is built for distraction. <strong>Blackbox rebuilds it for deep work.</strong></p>
+    </section>
+
+    <section class="pillars" aria-label="What Blackbox does for you">
+      <div class="pillar">
+        <p class="pillar-kicker">Focus</p>
+        <h2>Only your work gets through.</h2>
+        <p>Name what you'll finish. Blackbox lets in the apps and sites that goal needs and shuts out the rest until the time is up. It never sees your screen or what you type.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-kicker">Learn</p>
+        <h2>Learn from every block.</h2>
+        <p>See exactly what you shipped. Turn on reviews for a short fix list on your work, so the next block is better than the last.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-kicker">Stay consistent</p>
+        <h2>Make it a habit you keep.</h2>
+        <p>Set a block for the same time every weekday and add a stake if you want one. Each one you keep adds to your streak. Miss one and its stake goes to charity.</p>
+      </div>
+    </section>
+
     <section id="how" class="how" aria-labelledby="how-title">
-      <h2 id="how-title">One focus block, start to finish</h2>
-      <p class="section-lede">Five seconds to start. Fifty minutes of real focus. Proof of what you did, and a coach that makes the next one better.</p>
-      <ol class="steps">
-        <li class="step">
+      <h2 id="how-title">How one block works</h2>
+      <ol class="phases">
+        <li class="phase">
+          <p class="phase-when"><span class="num">1</span>Before <span class="muted">· 10 seconds</span></p>
           <div class="mock" aria-hidden="true">
             <p class="mock-goal">Write the design doc</p>
             <div class="chips"><span>25</span><span class="on">50 min</span><span>90</span></div>
             <p class="mock-label">Allowed</p>
             <div class="chips"><span>Google Docs</span><span>Figma</span></div>
           </div>
-          <h3><span class="num">1</span>Plan</h3>
-          <p>Say what you'll finish and for how long, once or every weekday at 9. Blackbox picks the apps and sites that goal needs.</p>
+          <h3>Say what you'll finish</h3>
+          <p>Pick a length, or repeat it every weekday. Blackbox suggests the apps and sites you'll need, and you approve the list.</p>
         </li>
-        <li class="step">
+        <li class="phase">
+          <p class="phase-when"><span class="num">2</span>During <span class="muted">· 25–90 minutes</span></p>
           <div class="mock mock-dark" aria-hidden="true">
             <p class="mock-blocked">Not part of this block.</p>
-            <span class="mock-button">Back to work</span>
+            <span class="mock-button">Return to my doc</span>
           </div>
-          <h3><span class="num">2</span>Focus</h3>
-          <p>Everything else is shut out. Stray for 5 minutes and you get one warning. Add a money stake if you want one.</p>
+          <h3>Work with nothing in the way</h3>
+          <p>Your goal and the time left, nothing else. Wander off for 5 minutes and you get one gentle warning. Want more commitment? Add an optional stake.</p>
         </li>
-        <li class="step">
+        <li class="phase">
+          <p class="phase-when"><span class="num">3</span>After <span class="muted">· 2 minutes</span></p>
           <div class="mock" aria-hidden="true">
-            <p class="mock-kept">Block kept</p>
+            <p class="mock-kept">Block kept · 6 in a row</p>
             <p class="mock-proof">3 commits pushed</p>
-            <p class="mock-proof">1 pull request opened</p>
             <p class="mock-proof">1,140 words written</p>
-          </div>
-          <h3><span class="num">3</span>See what you did</h3>
-          <p>Proof of work from your own tools. Not minutes logged: the things you actually shipped.</p>
-        </li>
-        <li class="step">
-          <div class="mock" aria-hidden="true">
-            <p class="mock-label">What</p>
+            <p class="mock-label">Fix</p>
             <p class="mock-fix">Add a rollback section</p>
-            <p class="mock-label">Why</p>
-            <p class="mock-why">Reviewers asked for it on your last two docs.</p>
           </div>
-          <h3><span class="num">4</span>Get coached</h3>
-          <p>Turn on reviews and get a short fix list for what you made, with a deadline you agree to.</p>
-        </li>
-        <li class="step">
-          <div class="mock" aria-hidden="true">
-            <p class="mock-streak"><strong>12</strong> day streak</p>
-            <div class="grid" aria-hidden="true"></div>
-          </div>
-          <h3><span class="num">5</span>Get stronger</h3>
-          <p>Every finished block adds a day to your streak and builds focus stamina. The coach stretches the next one when you're ready.</p>
+          <h3>See it, learn from it, keep the streak</h3>
+          <p>Proof of what you shipped, an optional fix list on your work, and one more day on your streak.</p>
         </li>
       </ol>
     </section>
 
     <section class="train" aria-labelledby="train-title">
       <div class="train-copy">
-        <h2 id="train-title">Focus is a muscle.<br><span class="muted">Blackbox trains it.</span></h2>
-        <p>Your stamina is the length of deep focus you can reliably hold. Keep three blocks at a length and the coach offers a longer one. Have a rough week and it helps you rebuild, without shame.</p>
+        <h2 id="train-title">Commit once.<br><span class="muted">Show up every day.</span></h2>
+        <p>Deep work compounds when it's daily. Choose a recurring block, say 9 am every weekday, and Blackbox runs it on schedule with nothing to re-plan.</p>
         <ul class="train-points">
-          <li><strong>A plan, not a timer.</strong> The coach picks your next block length.</li>
-          <li><strong>Same time, every day.</strong> Make any block recurring. It starts on schedule, with no re-planning.</li>
-          <li><strong>Your best hours.</strong> One quiet nudge when your focus window opens.</li>
-          <li><strong>Healthy limits.</strong> Four hours is a full deep-work day. Rest days never break the streak.</li>
+          <li><strong>A promise with weight.</strong> Put a stake on a recurring block. Keep it and nothing happens. Miss it and the stake goes to a charity you choose, so even a slip does some good.</li>
+          <li><strong>A nudge, not a nag.</strong> One reminder 10 minutes before, with Start now or Skip. Skipping counts as a miss.</li>
+          <li><strong>Pause any time.</strong> Holidays and sick days are one tap away, ahead of time.</li>
         </ul>
       </div>
-      <figure class="stamina" aria-label="Focus stamina rising from 25 to 60 minutes over six weeks">
-        <p class="stamina-head"><span class="mock-label">Focus stamina</span><span><strong>60</strong> min</span></p>
-        <div class="bars" aria-hidden="true">
-          <span style="height: 36%"><i>25</i></span>
-          <span style="height: 48%"><i>35</i></span>
-          <span style="height: 48%"><i>35</i></span>
-          <span style="height: 62%"><i>45</i></span>
-          <span style="height: 70%"><i>50</i></span>
-          <span class="now" style="height: 84%"><i>60</i></span>
+      <figure class="schedule" aria-label="A recurring block: Deep work, weekdays at 9 am, 90 minutes, $10, with a 12-day streak">
+        <p class="schedule-head"><span class="mock-label">Recurring block</span><span class="schedule-stake">$10</span></p>
+        <p class="schedule-goal">Deep work on the billing migration</p>
+        <p class="schedule-when">Weekdays · 9:00 am · 90 min</p>
+        <div class="days" aria-hidden="true">
+          <span class="kept">M</span><span class="kept">T</span><span class="kept">W</span><span class="kept">T</span><span class="next">F</span>
         </div>
-        <p class="stamina-offer">You've held 50 minutes three times. <strong>Try 60?</strong></p>
+        <div class="consistency">
+          <p class="mock-streak"><strong>12</strong> day streak</p>
+          <div class="grid" aria-hidden="true"></div>
+        </div>
       </figure>
     </section>
 
-    <section class="why" aria-labelledby="why-title">
-      <h2 id="why-title" class="visually-hidden">Why it works</h2>
-      <div>
-        <h3>Decide once, not all day</h3>
-        <p>You decide once, before you start. Then the Mac holds the line, so you don't spend focus resisting.</p>
-      </div>
-      <div>
-        <h3>A promise with weight</h3>
-        <p>Optionally stake money on your word. Lost stakes go to a charity you choose; we never profit from a miss.</p>
-      </div>
-      <div>
-        <h3>Feedback that compounds</h3>
-        <p>The coach learns your repos, your team's standards and your patterns. Each block teaches the next.</p>
-      </div>
-    </section>
-
-    <section class="trust" aria-label="Our promises">
-      <p><strong>Fair with money.</strong> A stake is lost only if you quit early or stray again after the warning. 24 hours to dispute. Lost stakes go to charity.</p>
-      <p><strong>Private.</strong> Your screen and keystrokes never leave your Mac. Reviews are off until you turn them on.</p>
-      <p><strong>Built for Mac.</strong> Works offline, signs in once.</p>
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <dl>
+        <div>
+          <dt>Will it block something I need?</dt>
+          <dd>You see the allowed list before you start and can change it with one tap, even mid-block after a 10-second pause.</dd>
+        </div>
+        <div>
+          <dt>Do I have to put money on it?</dt>
+          <dd>No. Stakes are optional. If you add one, it's lost only if you quit early, wander off again after the warning, or miss a recurring block. You get 24 hours to dispute, and lost stakes go to a charity you choose.</dd>
+        </div>
+        <div>
+          <dt>What can Blackbox see?</dt>
+          <dd>The app in front, the site's domain and the window title, only during a block. Never your screen or what you type. Reviews are off until you turn them on.</dd>
+        </div>
+        <div>
+          <dt>What if I need to stop?</dt>
+          <dd>Stop any time. Without a stake, nothing happens. With one, the stake is lost, and you have 24 hours to dispute it if something went wrong.</dd>
+        </div>
+        <div>
+          <dt>What if I miss a recurring block?</dt>
+          <dd>It counts as missed, and its stake (if you set one) goes to your charity. Pause the schedule ahead of time for holidays and it won't count.</dd>
+        </div>
+        <div>
+          <dt>Who is it for?</dt>
+          <dd>Anyone whose best work needs long, unbroken focus: engineers, writers, designers, researchers. Mac only for now.</dd>
+        </div>
+      </dl>
     </section>
 
     <section id="waitlist" class="waitlist" aria-labelledby="waitlist-title">
-      <h2 id="waitlist-title">Start your first deep work block</h2>
+      <h2 id="waitlist-title">Start doing your deep work</h2>
       <p class="section-lede">Early access for macOS. One email when it's ready, nothing else.</p>
       <form class="waitlist-form" novalidate>
         <label class="visually-hidden" for="email">Email address</label>
@@ -147,7 +162,7 @@
 
   <footer class="footer">
     <span class="wordmark">blackbox</span>
-    <span class="muted">The app for deep work.</span>
+    <span class="muted">The deep work app for Mac.</span>
   </footer>
 </body>
 </html>
