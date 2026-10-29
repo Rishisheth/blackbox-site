@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blackbox — a personal trainer for focused work</title>
+  <meta name="description" content="Say what you'll finish and what it's worth. Blackbox blocks everything else, holds you to it, and coaches your work afterward.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23000%22/%3E%3Crect x=%229%22 y=%229%22 width=%2214%22 height=%2214%22 rx=%222%22 fill=%22%23fff%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="waitlist.js" defer></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="wordmark" href="#top" aria-label="Blackbox home">blackbox</a>
+    <a class="button button-solid" href="#waitlist">Get early access</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Say what you'll finish.<br><span class="muted">We hold the line.</span></h1>
+      <p class="lede">A Mac app that blocks everything else, puts money on your word, and coaches your work when you're done.</p>
+      <div class="actions">
+        <a class="button button-solid" href="#waitlist">Get early access</a>
+        <a class="button button-outline" href="#how">See how it works</a>
+      </div>
+
+      <figure class="focus-card" aria-label="Focus mode: your goal and the time left, nothing else">
+        <div class="timeline"><span style="width: 64%"></span></div>
+        <p class="focus-goal">Write the design doc for the billing migration</p>
+        <p class="focus-time"><strong>32</strong> min left</p>
+      </figure>
+    </section>
+
+    <section id="how" class="how" aria-labelledby="how-title">
+      <h2 id="how-title">How it works</h2>
+      <ol class="steps">
+        <li class="step">
+          <div class="mock" aria-hidden="true">
+            <p class="mock-goal">Write the design doc</p>
+            <div class="chips"><span>25</span><span class="on">50 min</span><span>90</span></div>
+            <div class="chips"><span class="on">$10</span><span>$25</span></div>
+          </div>
+          <h3><span class="num">1</span>Declare</h3>
+          <p>Say what you'll finish, for how long, and what it's worth to you.</p>
+        </li>
+        <li class="step">
+          <div class="mock mock-dark" aria-hidden="true">
+            <p class="mock-blocked">Not part of this block.</p>
+            <span class="mock-button">Back to work</span>
+          </div>
+          <h3><span class="num">2</span>Focus</h3>
+          <p>Everything unrelated is blocked. Drift once, get a warning. Twice, the stake is gone.</p>
+        </li>
+        <li class="step">
+          <div class="mock" aria-hidden="true">
+            <p class="mock-label">What</p>
+            <p class="mock-fix">Add a rollback section</p>
+            <p class="mock-label">Why</p>
+            <p class="mock-why">Reviewers asked for it on your last two docs.</p>
+          </div>
+          <h3><span class="num">3</span>Get coached</h3>
+          <p>Your work is reviewed against your repos and your team. Fix it by the deadline.</p>
+        </li>
+        <li class="step">
+          <div class="mock" aria-hidden="true">
+            <p class="mock-streak"><strong>12</strong> day streak</p>
+            <div class="grid" aria-hidden="true"></div>
+          </div>
+          <h3><span class="num">4</span>Keep the streak</h3>
+          <p>Every kept block fills a box. Miss one and it shows.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="trust" aria-label="Our promises">
+      <p><strong>Fair with money.</strong> 24 hours to dispute any charge. Lost stakes go to charity.</p>
+      <p><strong>Private.</strong> Your screen and keystrokes never leave your Mac.</p>
+      <p><strong>Built for Mac.</strong> Works offline, signs in once.</p>
+    </section>
+
+    <section id="waitlist" class="waitlist" aria-labelledby="waitlist-title">
+      <h2 id="waitlist-title">Get early access</h2>
+      <form class="waitlist-form" novalidate>
+        <label class="visually-hidden" for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@work.com" required>
+        <button class="button button-solid" type="submit">Get early access</button>
+      </form>
+      <p class="waitlist-note" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="wordmark">blackbox</span>
+    <span class="muted">A personal trainer for focused work.</span>
+  </footer>
+</body>
+</html>
