@@ -96,6 +96,12 @@ p { margin: 0; }
 .phase > p:last-child { color: var(--muted); font-size: 14px; margin-top: 6px; }
 .consistency { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
 
+.why-now { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 72px 0; border-top: 1px solid var(--line); }
+.why-now h2 { font-size: 32px; line-height: 1.1; }
+.why-now-body { display: grid; gap: 14px; }
+.why-now-body p { color: var(--muted); font-size: 16px; line-height: 1.5; }
+.why-now-body strong { color: var(--text); font-weight: 500; }
+
 .faq { padding: 72px 0; border-top: 1px solid var(--line); }
 .faq h2 { font-size: 32px; margin-bottom: 24px; }
 .faq dl { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 48px; }
@@ -189,7 +195,8 @@ p { margin: 0; }
 }
 @media (max-width: 860px) {
   .steps { grid-template-columns: repeat(2, 1fr); }
-  .trust, .why, .train, .pillars, .phases, .faq dl { grid-template-columns: 1fr; }
+  .trust, .why, .train, .pillars, .phases, .faq dl, .why-now { grid-template-columns: 1fr; }
+  .why-now { gap: 20px; }
   .problem p { font-size: 17px; }
   .train { gap: 32px; }
 }
