@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blackbox — do your deep work, every day</title>
-  <meta name="description" content="The deep work app for Mac. Blackbox shuts out distractions while you work, coaches you on what you made, and keeps you showing up every day.">
+  <title>Blackbox — focus deeply, get better every block</title>
+  <meta name="description" content="The deep work app for Mac. Blackbox shuts out everything that isn't your goal, then reviews your work against the best thinking on your craft, so you focus deeply and build judgment every day.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23000%22/%3E%3Crect x=%229%22 y=%229%22 width=%2214%22 height=%2214%22 rx=%222%22 fill=%22%23fff%22/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="config.js"></script>
@@ -19,8 +19,8 @@
   <main id="top">
     <section class="hero">
       <p class="eyebrow">The deep work app for Mac</p>
-      <h1>Do your deep work.<br><span class="muted">Day after day.</span></h1>
-      <p class="lede">Blackbox shuts out distractions while you work, shows you what you got done, and holds you to coming back tomorrow. Focus, learn and stay consistent, without relying on willpower.</p>
+      <h1>Focus deeply.<br><span class="muted">Get better every block.</span></h1>
+      <p class="lede">Blackbox shuts out everything that isn't your goal while you work, then reviews what you made against the best thinking on your craft. Deep focus and better judgment, built a little every day.</p>
       <div class="actions">
         <a class="button button-solid" href="#waitlist">Get early access</a>
         <a class="button button-outline" href="#how">See how it works</a>
@@ -46,8 +46,8 @@
       </div>
       <div class="pillar">
         <p class="pillar-kicker">Learn</p>
-        <h2>Learn from every block.</h2>
-        <p>See exactly what you shipped. Turn on reviews for a short fix list grounded in the best books on your kind of work and your team's own standards.</p>
+        <h2>Build judgment, not just output.</h2>
+        <p>After a block, a reviewer picks the principles that matter for your kind of work and shows you exactly where to apply them, using your own repos and docs.</p>
       </div>
       <div class="pillar">
         <p class="pillar-kicker">Stay consistent</p>
@@ -61,37 +61,89 @@
       <ol class="phases">
         <li class="phase">
           <p class="phase-when"><span class="num">1</span>Before <span class="muted">· 10 seconds</span></p>
-          <div class="mock" aria-hidden="true">
+          <div class="mock app" aria-hidden="true">
+            <div class="app-bar"><i></i><i></i><i></i><span>New block</span></div>
+            <p class="mock-label">What will you finish?</p>
             <p class="mock-goal">Write the design doc</p>
-            <div class="chips"><span>25</span><span class="on">50 min</span><span>90</span></div>
-            <p class="mock-label">Allowed</p>
-            <div class="chips"><span>Google Docs</span><span>Figma</span></div>
+            <div class="chips"><span>25 min</span><span class="on">50 min</span><span>90 min</span></div>
+            <span class="mock-cta">Review bounds · 50 min →</span>
           </div>
           <h3>Say what you'll finish</h3>
           <p>Pick a length, or repeat it every weekday. Blackbox suggests the apps and sites you'll need, and you approve the list.</p>
         </li>
         <li class="phase">
           <p class="phase-when"><span class="num">2</span>During <span class="muted">· 25–90 minutes</span></p>
-          <div class="mock mock-dark" aria-hidden="true">
-            <p class="mock-blocked">Not part of this block.</p>
-            <span class="mock-button">Return to my doc</span>
+          <div class="mock app mock-dark" aria-hidden="true">
+            <div class="mock-time"><span style="width: 62%"></span></div>
+            <p class="mock-label mock-label-focus">In focus</p>
+            <p class="mock-blocked">Write the design doc</p>
+            <p class="mock-left"><strong>31</strong> min left</p>
+            <span class="mock-hold"><i></i>Hold to quit</span>
           </div>
           <h3>Work with nothing in the way</h3>
           <p>Your goal and the time left, nothing else. Wander off for 5 minutes and you get one gentle warning. Want more commitment? Add an optional stake.</p>
         </li>
         <li class="phase">
           <p class="phase-when"><span class="num">3</span>After <span class="muted">· 2 minutes</span></p>
-          <div class="mock" aria-hidden="true">
-            <p class="mock-kept">Block kept · 6 in a row</p>
+          <div class="mock app" aria-hidden="true">
+            <p class="mock-label mock-label-kept">Block kept · 6 in a row</p>
             <p class="mock-proof">3 commits pushed</p>
             <p class="mock-proof">1,140 words written</p>
-            <p class="mock-label">Fix</p>
-            <p class="mock-fix">Add a rollback section</p>
+            <div class="mock-fixcard">
+              <p class="mock-label mock-label-focus">Fix · due 6 pm</p>
+              <p class="mock-fix">Lead with the decision</p>
+              <p class="mock-tag">Answer first · The Pyramid Principle</p>
+            </div>
           </div>
           <h3>See it, learn from it, keep the streak</h3>
-          <p>Proof of what you shipped, an optional fix list on your work, and one more day on your streak.</p>
+          <p>Proof of what you shipped, a short fix list that teaches the principle behind each change, and one more day on your streak.</p>
         </li>
       </ol>
+    </section>
+
+    <section id="learn" class="reviewer" aria-labelledby="reviewer-title">
+      <div class="reviewer-copy">
+        <p class="eyebrow-plain">Learn</p>
+        <h2 id="reviewer-title">A reviewer that<br><span class="muted">builds your judgment.</span></h2>
+        <p>Most feedback tells you what to change. Blackbox tells you why, using the principles the best people in your craft rely on, so each block makes the next one better.</p>
+        <ul class="train-points">
+          <li><strong>The right principles for the work.</strong> Clear writing for an essay, <em>The Pyramid Principle</em> for a proposal, <em>A Philosophy of Software Design</em> for a pull request.</li>
+          <li><strong>Your context, not generic advice.</strong> It reads your repos, workspace docs and your own instructions, and your team's rules win over the book.</li>
+          <li><strong>Every fix shows its source.</strong> The principle, the chapter, and the line in your doc or repo, so you can check it.</li>
+          <li><strong>Make it stick.</strong> Turn on required changes: fixes get a deadline, and the block counts once they pass.</li>
+        </ul>
+      </div>
+      <figure class="review" aria-label="A fix card: Lead with the decision, with its principle and sources">
+        <div class="review-card">
+          <p class="review-head"><span class="mock-label">Reviewed as a design doc</span><span class="review-due">Due 6 pm</span></p>
+          <p class="review-what">Lead with the decision</p>
+          <p class="review-why">The recommendation sits in section 4. Readers who stop after the first paragraph will miss it. Open with the choice and the one reason that matters most.</p>
+          <div class="review-tags">
+            <span>Answer first · <em>The Pyramid Principle</em>, ch. 1</span>
+            <span>acme/docs · design doc template</span>
+          </div>
+        </div>
+        <div class="review-card review-card-quiet">
+          <p class="review-head"><span class="mock-label">Fix 2 of 3</span><span class="review-pass">Passed</span></p>
+          <p class="review-what">Name the rollback plan</p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="timers" aria-labelledby="timers-title">
+      <h2 id="timers-title">Quit the timer apps.<br><span class="muted">A timer counts minutes. Blackbox makes them count.</span></h2>
+      <table class="compare">
+        <thead>
+          <tr><th scope="col"><span class="visually-hidden">What you get</span></th><th scope="col">Focus timer</th><th scope="col">Blackbox</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Counts the minutes</th><td><span class="yes">Yes</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><th scope="row">Shuts out what isn't your goal</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><th scope="row">Knows what your work needs</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><th scope="row">Reviews what you made, with sources</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><th scope="row">Keeps you showing up, with optional stakes</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="train" aria-labelledby="train-title">
