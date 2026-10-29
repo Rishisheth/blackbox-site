@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finish saving your card — Blackbox</title>
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="hand-back">
+    <p class="eyebrow">Blackbox</p>
+    <h1 id="title">Almost done.<br><span class="muted">Open Blackbox to finish saving your card.</span></h1>
+    <p class="lede" id="detail">Stripe holds your card; Blackbox only stores a reference to it. Nothing is charged unless you lose a stake.</p>
+    <div class="actions"><a class="button button-solid" id="back" href="blackbox://payment">Open Blackbox</a></div>
+  </main>
+  <script>
+    // Stripe returns here with ?session_id=… (or ?cancelled=1). Hand it to the app.
+    (function () {
+      "use strict";
+      const params = new URLSearchParams(location.search);
+      const session = params.get("session_id");
+      const back = document.getElementById("back");
+      if (!session || params.get("cancelled")) {
+        document.getElementById("title").innerHTML = 'No card saved.<br><span class="muted">Nothing changed.</span>';
+        document.getElementById("detail").textContent = "You can save a card any time from Blackbox's Settings.";
+        return;
+      }
+      const link = "blackbox://payment?session_id=" + encodeURIComponent(session);
+      // Keep the session id out of the address bar and history once it's read.
+      history.replaceState(null, "", location.pathname);
+      back.href = link;
+      location.href = link;
+    })();
+  </script>
+</body>
+</html>
