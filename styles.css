@@ -108,6 +108,7 @@ p { margin: 0; }
 .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--kept); }
 .hero h1 { font-size: clamp(40px, 6.4vw, 68px); line-height: 1.02; }
 .lede { max-width: 560px; margin: 24px auto 0; font-size: 18px; line-height: 1.55; color: var(--muted); }
+.focus-blocked { margin-top: 18px; font-size: 13px; color: var(--night-muted); }
 .focus-time { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
 .focus-money strong { color: #f2c46d; }
 .focus-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: 0.12em; color: var(--night-focus); }
@@ -347,7 +348,8 @@ section { scroll-margin-top: 80px; }
 .why-now-body { display: grid; gap: 16px; }
 .why-now-body p { color: var(--night-muted); font-size: 16px; line-height: 1.6; }
 .why-now-body strong { color: var(--night-text); font-weight: 500; }
-.why-now { margin: 24px 0 88px; }
+.why-now { margin: 0 0 88px; }
+.pillars { margin-top: 8px; }
 
 .faq { padding: 112px 0 64px; }
 .faq dl { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }

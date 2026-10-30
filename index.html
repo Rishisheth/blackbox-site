@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blackbox — delete your Pomodoro app. Focus, and actually improve.</title>
-  <meta name="description" content="A focus coach that lives on your Mac. Put a stake on your focus time and Blackbox keeps you accountable, then shows you how to do it better.">
+  <title>Blackbox — stay focused or lose $10. Then get better at your work.</title>
+  <meta name="description" content="Blackbox is a Mac app for getting real work done. Say what you'll work on and put money on it. It blocks everything else until you're done, then reviews your work and shows you how to improve.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23000%22/%3E%3Crect x=%229%22 y=%229%22 width=%2214%22 height=%2214%22 rx=%222%22 fill=%22%23fff%22/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="config.js"></script>
@@ -18,9 +18,9 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">For deep work, on your Mac</p>
-      <h1>Delete your Pomodoro app.<br><span class="muted">Focus, and actually improve.</span></h1>
-      <p class="lede"><strong>A focus coach that lives on your Mac.</strong> Put a stake on your focus time and it keeps you accountable, so you actually do the work. Then it shows you how to do it better.</p>
+      <p class="eyebrow">A Mac app for getting real work done</p>
+      <h1>Stay focused or lose $10.<br><span class="muted">Then get better at your work.</span></h1>
+      <p class="lede">Say what you'll work on and put money on it. Blackbox blocks everything else until you're done, then reviews your work and shows you how to improve.</p>
       <div class="actions">
         <a class="button button-solid" href="#waitlist">Get early access</a>
         <a class="button button-outline" href="#how">See how it works</a>
@@ -28,17 +28,18 @@
 
       <div class="hero-pair">
         <figure class="hero-step" aria-label="While you work: your task, the time left and the $10 on the line, nothing else">
-          <figcaption><span class="num">1</span>While you work</figcaption>
+          <figcaption><span class="num">1</span>While you work: distractions are blocked</figcaption>
           <div class="focus-card">
             <p class="focus-head"><span>In focus</span><span class="focus-stake-chip">Staked</span></p>
             <div class="timeline"><span style="width: 64%"></span></div>
             <p class="focus-goal">Write the design doc for the billing migration</p>
+            <p class="focus-blocked">Blocked: YouTube · X · Reddit · Instagram</p>
             <p class="focus-time"><span><strong>32</strong> min left</span><span class="focus-money"><strong>$10</strong> on the line</span></p>
           </div>
         </figure>
         <span class="hero-arrow" aria-hidden="true">→</span>
         <figure class="hero-step" aria-label="After you work: what you did well, and one thing to do better, with the principle behind it">
-          <figcaption><span class="num">2</span>After you work</figcaption>
+          <figcaption><span class="num">2</span>After: your work gets reviewed</figcaption>
           <div class="coach-card">
             <p class="coach-label coach-good">What you did well</p>
             <p class="coach-line">You named the rollback plan before the risks. Readers trust a plan they can undo.</p>
@@ -50,30 +51,21 @@
       </div>
     </section>
 
-    <section id="why" class="why-now" aria-labelledby="why-title">
-      <h2 id="why-title">Why we're building this</h2>
-      <div class="why-now-body">
-        <p>We all have the same AI tools now. What sets people apart is the work only they can do: thinking hard about a problem, and knowing what good looks like.</p>
-        <p>That takes long stretches of focus and honest feedback. Most of us get neither. Our desks are built to interrupt us, and real feedback comes rarely, late, or never.</p>
-        <p><strong>Blackbox fixes both.</strong> It protects your time, then helps you get a little better with every block. It's early. Try it and tell us what you think.</p>
-      </div>
-    </section>
-
-    <section class="pillars" aria-label="What Blackbox does for you">
+    <section class="pillars" aria-label="What Blackbox does">
       <div class="pillar">
-        <p class="pillar-kicker">Focus</p>
-        <h2>Stay accountable.</h2>
-        <p>Say what you'll do and put money on it. Only the apps and sites it needs get through, and quitting costs you the stake.</p>
+        <p class="pillar-kicker">Blocks</p>
+        <h2>It blocks distractions.</h2>
+        <p>Only the apps and sites your work needs will open until the time is up.</p>
       </div>
       <div class="pillar">
-        <p class="pillar-kicker">Improve</p>
-        <h2>Get better every time.</h2>
-        <p>After each block, see what you did well and what to do better next time, and why.</p>
+        <p class="pillar-kicker">Holds you to it</p>
+        <h2>Quitting costs you.</h2>
+        <p>Put money on a block. Keep it and you pay nothing. Quit or wander off and it goes to charity.</p>
       </div>
       <div class="pillar">
-        <p class="pillar-kicker">Stay consistent</p>
-        <h2>Show up every day.</h2>
-        <p>Repeat a block every weekday and watch your streak grow. Add a small stake if you want a push.</p>
+        <p class="pillar-kicker">Reviews</p>
+        <h2>It reviews your work.</h2>
+        <p>When you finish, see what you did well and exactly what to do better next time.</p>
       </div>
     </section>
 
@@ -160,6 +152,15 @@
           </div>
           <p>Explain it back in a few sentences. Blackbox checks it against the real source and asks again a week later, so it sticks.</p>
         </article>
+      </div>
+    </section>
+
+    <section id="why" class="why-now" aria-labelledby="why-title">
+      <h2 id="why-title">Why we're building this</h2>
+      <div class="why-now-body">
+        <p>We all have the same AI tools now. What sets people apart is the work only they can do: thinking hard about a problem, and knowing what good looks like.</p>
+        <p>That takes long stretches of focus and honest feedback. Most of us get neither. Our desks are built to interrupt us, and real feedback comes rarely, late, or never.</p>
+        <p><strong>Blackbox fixes both.</strong> It protects your time, then helps you get a little better with every block. It's early. Try it and tell us what you think.</p>
       </div>
     </section>
 
