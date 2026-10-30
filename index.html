@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blackbox — delete your Pomodoro app. Focus, and actually improve.</title>
-  <meta name="description" content="The deep work app for Mac. Blackbox shuts out everything that isn't your goal, then reviews your work against the best thinking on your craft, so you focus deeply and build judgment every day.">
+  <meta name="description" content="The deep work app for Mac. While you work, Blackbox blocks everything that isn't your task. After, it reviews what you did like a senior colleague would, so you focus deeply and get better at your craft every day.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23000%22/%3E%3Crect x=%229%22 y=%229%22 width=%2214%22 height=%2214%22 rx=%222%22 fill=%22%23fff%22/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="config.js"></script>
@@ -20,17 +20,41 @@
     <section class="hero">
       <p class="eyebrow">The deep work app for Mac</p>
       <h1>Delete your Pomodoro app.<br><span class="muted">Focus, and actually improve.</span></h1>
-      <p class="lede">Blackbox shuts out everything that isn't your goal while you work, then reviews what you made against the best thinking on your craft. Deep focus and better judgment, built a little every day.</p>
+      <p class="lede"><strong>Blackbox does two things.</strong> While you work, it blocks everything that isn't your task. After, it reviews what you did, the way a senior colleague would, and shows you how to do it better next time.</p>
       <div class="actions">
         <a class="button button-solid" href="#waitlist">Get early access</a>
         <a class="button button-outline" href="#how">See how it works</a>
       </div>
 
-      <figure class="focus-card" aria-label="Focus mode: your goal and the time left, nothing else">
-        <div class="timeline"><span style="width: 64%"></span></div>
-        <p class="focus-goal">Write the design doc for the billing migration</p>
-        <p class="focus-time"><strong>32</strong> min left</p>
-      </figure>
+      <div class="hero-pair">
+        <figure class="hero-step" aria-label="While you work: your task and the time left, nothing else">
+          <figcaption><span class="num">1</span>While you work</figcaption>
+          <div class="focus-card">
+            <div class="timeline"><span style="width: 64%"></span></div>
+            <p class="focus-goal">Write the design doc for the billing migration</p>
+            <p class="focus-time"><strong>32</strong> min left</p>
+          </div>
+        </figure>
+        <span class="hero-arrow" aria-hidden="true">→</span>
+        <figure class="hero-step" aria-label="After you work: what you did well, and one thing to do better, with the principle behind it">
+          <figcaption><span class="num">2</span>After you work</figcaption>
+          <div class="coach-card">
+            <p class="coach-label coach-good">What you did well</p>
+            <p class="coach-line">You named the rollback plan before the risks. Readers trust a plan they can undo.</p>
+            <p class="coach-label coach-better">One thing to do better</p>
+            <p class="coach-line"><strong>Lead with the decision.</strong> It sits in section 4; most readers stop after the first paragraph.</p>
+            <p class="coach-tag">Answer first · <em>The Pyramid Principle</em></p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="equation" aria-label="Blackbox in one line">
+      <div class="eq-part"><p class="eq-kicker">A focus app</p><p>Blocks distractions and keeps you on your task.</p></div>
+      <span class="eq-sign" aria-hidden="true">+</span>
+      <div class="eq-part"><p class="eq-kicker">A coach</p><p>Reviews your work and teaches the why behind each fix.</p></div>
+      <span class="eq-sign" aria-hidden="true">=</span>
+      <div class="eq-part eq-result"><p class="eq-kicker">Blackbox</p><p>You do your best work, and get better at it every day.</p></div>
     </section>
 
     <section class="problem" aria-label="The problem">
@@ -45,9 +69,9 @@
         <p>Name what you'll finish. Blackbox lets in the apps and sites that goal needs and shuts out the rest until the time is up. It never sees your screen or what you type.</p>
       </div>
       <div class="pillar">
-        <p class="pillar-kicker">Learn</p>
-        <h2>Build judgment, not just output.</h2>
-        <p>After a block, a reviewer picks the principles that matter for your kind of work and shows you exactly where to apply them, using your own repos and docs.</p>
+        <p class="pillar-kicker">Improve</p>
+        <h2>Get better every block.</h2>
+        <p>After each block you see what you did well and one to three things to do better, each tied to a principle from the best books on your craft and to the exact line in your work.</p>
       </div>
       <div class="pillar">
         <p class="pillar-kicker">Stay consistent</p>
@@ -64,12 +88,13 @@
           <div class="mock app" aria-hidden="true">
             <div class="app-bar"><i></i><i></i><i></i><span>New block</span></div>
             <p class="mock-label">What will you finish?</p>
-            <p class="mock-goal">Write the design doc</p>
-            <div class="chips"><span>25 min</span><span class="on">50 min</span><span>90 min</span></div>
-            <span class="mock-cta">Review bounds · 50 min →</span>
+            <p class="mock-task"><span class="kind">Make</span>Write the design doc</p>
+            <p class="mock-task"><span class="kind">Review</span>acme/api #412</p>
+            <p class="mock-task"><span class="kind">Learn</span>How billing retries work</p>
+            <span class="mock-cta">Review bounds · 3 tasks · 50 min →</span>
           </div>
-          <h3>Say what you'll finish</h3>
-          <p>Pick a length, or repeat it every weekday. Blackbox suggests the apps and sites you'll need, and you approve the list.</p>
+          <h3>List what you'll do</h3>
+          <p>Up to five tasks: something to make, a teammate's PR to review, or something to learn. Blackbox suggests the apps and sites they need; you approve the list.</p>
         </li>
         <li class="phase">
           <p class="phase-when"><span class="num">2</span>During <span class="muted">· 25–90 minutes</span></p>
@@ -77,28 +102,68 @@
             <div class="mock-time"><span style="width: 62%"></span></div>
             <p class="mock-label mock-label-focus">In focus</p>
             <p class="mock-blocked">Write the design doc</p>
+            <p class="mock-next">Next · Review acme/api #412</p>
             <p class="mock-left"><strong>31</strong> min left</p>
             <span class="mock-hold"><i></i>Hold to quit</span>
           </div>
           <h3>Work with nothing in the way</h3>
-          <p>Your goal and the time left, nothing else. Wander off for 5 minutes and you get one gentle warning. Want more commitment? Add an optional stake.</p>
+          <p>Your current task and the time left, nothing else. Tick it off and the next one moves up. Wander off for 5 minutes and you get one gentle warning.</p>
         </li>
         <li class="phase">
           <p class="phase-when"><span class="num">3</span>After <span class="muted">· 2 minutes</span></p>
           <div class="mock app" aria-hidden="true">
             <p class="mock-label mock-label-kept">Block kept · 6 in a row</p>
-            <p class="mock-proof">3 commits pushed</p>
-            <p class="mock-proof">1,140 words written</p>
+            <p class="mock-proof">50 minutes, not one drift</p>
+            <p class="mock-proof">2 of 3 tasks done</p>
             <div class="mock-fixcard">
               <p class="mock-label mock-label-focus">Fix · due 6 pm</p>
               <p class="mock-fix">Lead with the decision</p>
               <p class="mock-tag">Answer first · The Pyramid Principle</p>
             </div>
           </div>
-          <h3>See it, learn from it, keep the streak</h3>
-          <p>Proof of what you shipped, a short fix list that teaches the principle behind each change, and one more day on your streak.</p>
+          <h3>Learn from it, keep the streak</h3>
+          <p>What went well, a short list of fixes that each teach the principle behind the change, and one more day on your streak.</p>
         </li>
       </ol>
+    </section>
+
+    <section id="improve" class="kinds-section" aria-labelledby="kinds-title">
+      <p class="eyebrow-plain">How it helps you improve</p>
+      <h2 id="kinds-title">Whatever the work,<br><span class="muted">you get better at it.</span></h2>
+      <p class="section-intro">Each task gets the feedback that fits it. You always go first: Blackbox never does the work for you. It shows you how to do it better, and why.</p>
+      <div class="kinds">
+        <article class="kind-card">
+          <p class="kind-head"><span class="kind">Make</span>Write, code, design</p>
+          <h3>It reviews what you made.</h3>
+          <div class="mini" aria-hidden="true">
+            <p class="coach-label coach-good">Did well</p>
+            <p class="mini-line">Small, well-named functions</p>
+            <p class="coach-label coach-better">Do better</p>
+            <p class="mini-line">Retry has no upper bound <span class="mini-src">billing/retry.py:42</span></p>
+          </div>
+          <p>Strengths first, then up to seven fixes, each with its principle and the exact line.</p>
+        </article>
+        <article class="kind-card">
+          <p class="kind-head"><span class="kind">Review</span>A teammate's PR</p>
+          <h3>It coaches your review.</h3>
+          <div class="mini" aria-hidden="true">
+            <p class="mini-score"><span class="good">Caught 3</span><span class="better">Missed 1</span></p>
+            <p class="mini-line">Missed: no timeout on the payment call</p>
+            <p class="mini-line mini-quiet">"nit: rename" → "Rename to retry_limit so the cap is obvious"</p>
+          </div>
+          <p>Review the PR yourself, then see what you caught, what a strong reviewer would add, and your comments made clearer.</p>
+        </article>
+        <article class="kind-card">
+          <p class="kind-head"><span class="kind">Learn</span>A system or a paper</p>
+          <h3>It checks you understood.</h3>
+          <div class="mini" aria-hidden="true">
+            <p class="mini-score"><span class="good">3 of 4 points</span></p>
+            <p class="mini-line">Missing: retries reuse the same ledger key</p>
+            <p class="mini-line mini-quiet">One question again in 7 days</p>
+          </div>
+          <p>Explain it back in a few sentences. Blackbox checks it against the real source and asks again a week later, so it sticks.</p>
+        </article>
+      </div>
     </section>
 
     <section class="screens" aria-labelledby="screens-title">
@@ -129,8 +194,9 @@
         <h2 id="reviewer-title">A reviewer that<br><span class="muted">builds your judgment.</span></h2>
         <p>Most feedback tells you what to change. Blackbox tells you why, using the principles the best people in your craft rely on, so each block makes the next one better.</p>
         <ul class="train-points">
+          <li><strong>It starts with what you did well.</strong> Specific and earned, pointing at the line that shows it. If nothing stands out, it says nothing.</li>
           <li><strong>The right principles for the work.</strong> Clear writing for an essay, <em>The Pyramid Principle</em> for a proposal, <em>A Philosophy of Software Design</em> for a pull request.</li>
-          <li><strong>Your context, not generic advice.</strong> It reads your repos, workspace docs and your own instructions, and your team's rules win over the book.</li>
+          <li><strong>Your context, not generic advice.</strong> It reads your repos, workspace docs and your own instructions, and your team's rules win over the book. GitHub today; Google Docs, Notion, Linear and Jira next.</li>
           <li><strong>Every fix shows its source.</strong> The principle, the chapter, and the line in your doc or repo, so you can check it.</li>
           <li><strong>Make it stick.</strong> Turn on required changes: fixes get a deadline, and the block counts once they pass.</li>
         </ul>
@@ -163,6 +229,7 @@
           <tr><th scope="row">Shuts out what isn't your goal</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
           <tr><th scope="row">Knows what your work needs</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
           <tr><th scope="row">Reviews what you made, with sources</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><th scope="row">Coaches your code reviews and checks what you learned</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
           <tr><th scope="row">Keeps you showing up, with optional stakes</th><td><span class="no">No</span></td><td><span class="yes">Yes</span></td></tr>
         </tbody>
       </table>
@@ -207,6 +274,14 @@
       <h2 id="faq-title">Questions</h2>
       <dl>
         <div>
+          <dt>How does it help me get better?</dt>
+          <dd>After each block it reviews what you did: what you did well, then a few fixes, each with the principle behind it. For a PR you reviewed, it shows what you caught and missed. For something you studied, it checks your explanation against the source.</dd>
+        </div>
+        <div>
+          <dt>Is the AI doing my work for me?</dt>
+          <dd>No, on purpose. You always go first. Blackbox only shows you how to do it better and why, so the skill ends up in your head, not in a chat window.</dd>
+        </div>
+        <div>
           <dt>Will it block something I need?</dt>
           <dd>You see the allowed list before you start and can change it with one tap, even mid-block after a 10-second pause.</dd>
         </div>
@@ -234,7 +309,7 @@
     </section>
 
     <section id="waitlist" class="waitlist" aria-labelledby="waitlist-title">
-      <h2 id="waitlist-title">Start doing your deep work</h2>
+      <h2 id="waitlist-title">Focus deeply. Get better every day.</h2>
       <p class="section-lede">Early access for macOS. One email when it's ready, nothing else.</p>
       <form class="waitlist-form" novalidate>
         <label class="visually-hidden" for="email">Email address</label>
