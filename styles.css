@@ -116,6 +116,8 @@ p { margin: 0; }
   flex: none; font: 500 12px var(--mono); padding: 4px 10px; border-radius: 999px;
   background: var(--primary); color: var(--on-primary); box-shadow: 0 2px 0 var(--edge);
 }
+.focus-time { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.focus-money strong { color: #f2c46d; }
 .focus-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: 0.12em; color: var(--night-focus); }
 .focus-stake-chip { color: var(--night); background: var(--night-text); padding: 4px 10px; border-radius: 999px; letter-spacing: 0.08em; box-shadow: 0 2px 0 #b9b0a4; }
 .actions { display: flex; gap: 12px; justify-content: center; margin-top: 32px; flex-wrap: wrap; }
