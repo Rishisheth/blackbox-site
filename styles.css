@@ -116,7 +116,8 @@ p { margin: 0; }
   flex: none; font: 500 12px var(--mono); padding: 4px 10px; border-radius: 999px;
   background: var(--primary); color: var(--on-primary); box-shadow: 0 2px 0 var(--edge);
 }
-.focus-stake { color: var(--night-muted); }
+.focus-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: 0.12em; color: var(--night-focus); }
+.focus-stake-chip { color: var(--night); background: var(--night-text); padding: 4px 10px; border-radius: 999px; letter-spacing: 0.08em; box-shadow: 0 2px 0 #b9b0a4; }
 .actions { display: flex; gap: 12px; justify-content: center; margin-top: 32px; flex-wrap: wrap; }
 
 .focus-card {
@@ -352,7 +353,6 @@ section { scroll-margin-top: 80px; }
 .why-now-body { display: grid; gap: 16px; }
 .why-now-body p { color: var(--night-muted); font-size: 16px; line-height: 1.6; }
 .why-now-body strong { color: var(--night-text); font-weight: 500; }
-.why-now-body .signature { font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: 0.12em; color: var(--night-text); }
 .why-now { margin: 24px 0 88px; }
 
 .faq { padding: 112px 0 64px; }
