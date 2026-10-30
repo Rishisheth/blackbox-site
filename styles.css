@@ -144,16 +144,6 @@ section { scroll-margin-top: 80px; }
 .coach-line strong { font-weight: 500; }
 .coach-tag { align-self: flex-start; font-size: 12px; padding: 5px 10px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); }
 
-/* "A focus app + a coach = Blackbox", in one glance. */
-.equation { display: flex; align-items: center; gap: 12px; margin-top: 8px; padding: 12px; border-radius: var(--radius-panel); background: var(--raised); }
-.eq-part { flex: 1; background: var(--surface); border-radius: var(--radius-card); padding: 20px 22px; box-shadow: var(--shadow-card); }
-.eq-part p:last-child { color: var(--muted); font-size: 15px; margin-top: 6px; }
-.eq-kicker { font: 500 18px var(--display); letter-spacing: -0.02em; color: var(--text); }
-.eq-result { background: var(--primary); }
-.eq-result .eq-kicker { color: var(--on-primary); }
-.eq-result p:last-child { color: #cfc6ba; }
-.eq-sign { font: 500 24px var(--display); color: var(--muted); }
-
 /* Task kinds: a small chip in the mocks and the kind cards. */
 .kind {
   display: inline-block; font: 500 10px var(--mono); text-transform: uppercase; letter-spacing: 0.1em;
@@ -353,6 +343,8 @@ section { scroll-margin-top: 80px; }
 .why-now-body { display: grid; gap: 16px; }
 .why-now-body p { color: var(--night-muted); font-size: 16px; line-height: 1.6; }
 .why-now-body strong { color: var(--night-text); font-weight: 500; }
+.why-now-body .signature { font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: 0.12em; color: var(--night-text); }
+.why-now { margin: 24px 0 88px; }
 
 .faq { padding: 112px 0 64px; }
 .faq dl { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -392,8 +384,6 @@ section { scroll-margin-top: 80px; }
   .how h2, .faq h2, .train h2, .waitlist h2, .reviewer h2, .screens h2, .timers h2, .kinds-section h2 { font-size: 32px; }
   .hero-pair { flex-direction: column; align-items: stretch; }
   .hero-arrow { transform: rotate(90deg); align-self: center; }
-  .equation { flex-direction: column; align-items: stretch; }
-  .eq-sign { align-self: center; }
 }
 @media (max-width: 480px) {
   .hero { padding: 72px 0 56px; }
